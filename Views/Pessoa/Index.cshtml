@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Pato"]</h1>
+    <p>@{
+        var a = @ViewData["Pato"].ToList();
+    }</p>
+    <p>@a</p>
+
+    @foreach (var x in @a)
+    {<li>@x</li>}
+
+
+
+</div>
+ 
